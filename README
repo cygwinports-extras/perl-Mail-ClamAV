@@ -1,0 +1,79 @@
+perl-Mail-ClamAV
+-------------------------------------------
+Perl bindings for Clam Antivirus.
+
+Runtime requirements:
+  cygwin-1.5.19-4
+  clamav-0.88.1-1
+  perl-5.8.7-5
+
+Build requirements:
+(besides corresponding devel packages)
+  cygwin-1.5.19-4
+  binutils-20050610-1
+  cygport-0.1.92-1
+  gcc-core-3.4.4-1
+  make-3.80-1
+  perl-5.8.7-5
+
+Canonical homepage:
+  http://search.cpan.org/~sabeck/Mail-ClamAV/
+
+Canonical download:
+  http://www.cpan.org/authors/id/S/SA/SABECK/
+
+-------------------------------------------
+
+Build instructions:
+  unpack perl-Mail-ClamAV-0.17-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./perl-Mail-ClamAV-0.17-X.cygport all
+
+This will create:
+  /usr/src/perl-Mail-ClamAV-0.17-X-src.tar.bz2
+  /usr/src/perl-Mail-ClamAV-0.17-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/postinstall/perl-Mail-ClamAV.sh
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Mail/ClamAV.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Mail/ClamAV.pm.bak
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Mail/ClamAV/.packlist
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Mail/ClamAV/ClamAV.bs
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Mail/ClamAV/ClamAV.dll
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Mail/ClamAV/libClamAV.dll.a
+  /usr/share/doc/Cygwin/perl-Mail-ClamAV-0.17.README
+  /usr/share/doc/perl-Mail-ClamAV-0.17/Changes
+  /usr/share/doc/perl-Mail-ClamAV-0.17/INSTALL
+  /usr/share/doc/perl-Mail-ClamAV-0.17/README
+  /usr/share/man/man3/Mail.ClamAV.3pm.gz
+  /usr/share/perl/cygwin-pods/5.8/Mail-ClamAV.pod
+
+------------------
+
+Port Notes:
+
+----- version 0.17-1 -----
+Version bump.
+
+----- version 0.13-2 -----
+Rebuilt for perl-5.8.6.
+
+----- version 0.13-1 -----
+New upstream release, with support for clamav-0.80.
+
+----- version 0.11-1 -----
+New upstream release.  Includes a few bugfixes and uses the 
+clamav-config script included in clamav >= 0.73 for setting CFLAGS and 
+LIBS.
+
+----- version 0.08-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

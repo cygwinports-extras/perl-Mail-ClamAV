@@ -1,0 +1,4 @@
+category: Perl
+requires: cygwin clamav perl
+sdesc: "Perl bindings for ClamAV"
+ldesc: "Perl bindings for Clam Antivirus"
